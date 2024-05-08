@@ -1,12 +1,22 @@
-# Build a Portfolio
-I have build a responsive website that will display images. links and description.
-This is my first portfolio project.
 
-# Files Included
+# Portfolio Jose Perazza
 
-* index.html
-* main.css in css folder
-* Gruntfile.js
-* img folder
-* dist folder
-* package.json
+Segunda version de portfolio realizada, intentando aplicar conocimientos y retoques a antiguos codigos, centrado en Front End.
+
+
+
+
+
+
+
+
+## Tecnologias usadas
+
+• HTML
+
+•CSS3
+
+•Sass
+
+•Javascript
+
