@@ -285,5 +285,29 @@ main {
       font-size: 5rem; }
   .projects {
     grid-template-columns: 1fr; } }
-
+.footercv {
+  text-align: center;
+}
+    .botonCV {
+      
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff; 
+    
+        background-color: #581449; /* violeta */
+        border-radius: 5px;
+        border: none;
+        transition: background-color 0.3s ease;
+      }
+      
+      .botonCV:hover {
+        
+box-shadow: #cc53b8 1px 0 12px;} /* violeta más oscuro al pasar el ratón */
+      
+      
     
