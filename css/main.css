@@ -347,3 +347,14 @@ box-shadow: #cc53b8 1px 0 12px;} /* violeta más oscuro al pasar el ratón */
     height: 150px; /* Ajuste para pantallas pequeñas */
   }
 }
+
+/* Descripción breve dentro de la card para proyectos (como sistema POS) */
+.project-desc {
+  font-size: 0.95rem;
+  line-height: 1.3;
+  padding: 0.5rem 0.4rem;
+  margin: 0.4rem 0;
+  background: rgba(73, 73, 73, 0.25);
+  border-radius: 4px;
+  min-height: 48px; /* ayuda a homogeneizar la altura de las cards */
+}
