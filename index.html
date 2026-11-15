@@ -1,80 +1,310 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
-<link rel="icon" href="/dist/img/pngwing.com.png" type="x/icon">
-  <link rel="stylesheet" href="css/main.css">
-  <title> Bienvenido </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>José Perazza · Desarrollador web</title>
+  <meta name="description" content="José Perazza, desarrollador web en Uruguay. Sitios, sistemas internos y automatizaciones para comercios y equipos. Fundador de ConectaTuMundo.">
+  <meta property="og:title" content="José Perazza · Desarrollador web">
+  <meta property="og:description" content="Webs y herramientas que le ahorran trabajo a comercios y equipos. Chuy y Durazno, Uruguay.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://perazzajose.github.io/portfolio/">
+  <meta property="og:image" content="https://perazzajose.github.io/portfolio/img/proyectos/conectatumundo.webp">
+  <meta name="theme-color" content="#f3eee7">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23211b24'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' font-weight='700' fill='%23f3eee7' text-anchor='middle'%3EJP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+<body>
 
-<body id="bg-img">
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
+<header class="nav">
+  <div class="wrap">
+    <a class="marca" href="#inicio" aria-label="José Perazza, ir al inicio"><span class="mono">JP</span><span>José Perazza</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+    <ul id="menu">
+      <li><a href="#trabajo">Trabajo</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a class="cta" href="https://wa.me/59897154271" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
 
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
+<main>
+  <!-- Portada -->
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div>
+        <p class="etiqueta">Desarrollador web · Uruguay</p>
+        <h1>Webs y herramientas que le ahorran trabajo a <em>comercios</em> y equipos.</h1>
+        <p class="bajada">Soy José Perazza. Hago sitios, sistemas internos y automatizaciones a medida, pensados para el día a día de quien atiende al público.</p>
+        <div class="acciones">
+          <a class="btn pri" href="https://wa.me/59897154271" target="_blank" rel="noopener">Escribime por WhatsApp</a>
+          <a class="btn sec" href="#trabajo">Ver trabajos</a>
+        </div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item current">
-          <a href="index.html" class="nav-link">
-            Inicio
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">
-            Sobre mi
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="work.html" class="nav-link">
-            Proyectos
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            Contacto
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="home">
-    <h1 class="lg-heading">
-      <a href="Jose_Perazza_DesarrolloWeb.pdf.pdf">José</a>
-      <span class="text-secondary">Perazza</span>
-    </h1>
-    <h2 class="sm-heading">
-      Desarrollador web especializado en Front End y logística.
-    </h2>
-    <div class="icons">
-      <a href="https://www.linkedin.com/in/joseperazza0" target="_blank">
-        <i class="fab fa-linkedin fa-2x"></i>
-      </a>
-      <a href="https://github.com/perazzajose" target="_blank">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-      
+      <aside class="ficha-hero" aria-label="Resumen">
+        <dl>
+          <div><dt>Base</dt><dd>Chuy y Durazno, Uruguay</dd></div>
+          <div><dt>Hago</dt><dd>Sitios web, sistemas internos y automatizaciones</dd></div>
+          <div><dt>Proyecto</dt><dd><a href="https://conectatumundo.net" target="_blank" rel="noopener">ConectaTuMundo</a></dd></div>
+          <div><dt>Estado</dt><dd><span class="punto" aria-hidden="true"></span>Tomando trabajos</dd></div>
+        </dl>
+      </aside>
     </div>
+  </section>
 
-    
-  </main>
+  <!-- Trabajo real -->
+  <section class="bloque" id="trabajo">
+    <div class="wrap">
+      <div class="cabecera">
+        <h2>Trabajo para clientes y equipos</h2>
+        <p>Proyectos en uso o en desarrollo para personas y comercios reales. Algunos son herramientas internas, así que se describen pero no tienen link público.</p>
+      </div>
 
-  <script src="js/main.js"></script>
-</body>
-<footer class="footercv">
-  <a href="Jose_Perazza_DesarrolloWeb.pdf.pdf" class="botonCV " target="_blank">Visualizar CV</a>
+      <div class="trabajos">
+        <article class="trabajo ancho">
+          <div class="txt">
+            <p class="etiqueta tipo">Proyecto propio · En producción</p>
+            <h3>ConectaTuMundo</h3>
+            <p>Plataforma para que los pequeños comercios uruguayos se digitalicen. Incluye un comparador de terminales POS con recomendador, un directorio de negocios, un editor de CV gratuito y búsqueda laboral por zona.</p>
+            <ul class="chips"><li>React + Vite</li><li>Firebase</li><li>Cloudflare Pages</li></ul>
+            <a class="ver" href="https://conectatumundo.net" target="_blank" rel="noopener">Ver conectatumundo.net</a>
+          </div>
+          <img class="captura" src="img/proyectos/conectatumundo.webp" alt="Portada del sitio de ConectaTuMundo" width="960" height="600" loading="lazy">
+        </article>
+
+        <article class="trabajo">
+          <img class="captura" src="img/proyectos/corrida-san-pedro.webp" alt="Portada del proyecto Corrida de San Pedro" width="960" height="600" loading="lazy">
+          <p class="etiqueta tipo">Cliente · Trillo Eventos</p>
+          <h3>Corrida de San Pedro</h3>
+          <p>Sitio del evento con galería de fotos ordenada por edición, gestión de sponsors y un panel de administración con acceso protegido.</p>
+          <ul class="chips"><li>GitHub Pages</li><li>Firestore</li><li>Firebase Auth</li></ul>
+        </article>
+
+        <article class="trabajo">
+          <img class="captura" src="img/proyectos/pintureria-arrabalera.webp" alt="Portada del proyecto Pinturería Arrabalera" width="960" height="600" loading="lazy">
+          <p class="etiqueta tipo">Cliente · Tacuarembó y Durazno</p>
+          <h3>Pinturería Arrabalera</h3>
+          <p>Trabajo sobre su tienda en Shopify (tema en Liquid, dominio y DNS) y diseño de un sistema de clientes e inventario para la sucursal de Durazno.</p>
+          <ul class="chips"><li>Shopify</li><li>Liquid</li><li>Firebase</li></ul>
+        </article>
+
+        <article class="trabajo">
+          <img class="captura" src="img/proyectos/cartel-terminal.webp" alt="Cartel de salidas y llegadas de la terminal de Chuy, con servicios embarcando y demorados" width="960" height="600" loading="lazy">
+          <p class="etiqueta tipo">Prototipo · Terminal de Chuy</p>
+          <h3>Cartel de salidas y llegadas</h3>
+          <p>Cartel para la tele de la terminal, en español y portugués, con un panel desde el celular para marcar demoras, embarques y andenes. Guarda un registro de horarios reales.</p>
+          <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+
+        <article class="trabajo">
+          <img class="captura" src="img/proyectos/avisos-encomiendas.webp" alt="Celular con la etiqueta leída y el aviso de WhatsApp listo para enviar, con datos de ejemplo" width="960" height="600" loading="lazy">
+          <p class="etiqueta tipo">Herramienta interna · Mostrador</p>
+          <h3>Avisos de encomiendas</h3>
+          <p>Lee los datos del destinatario en el sistema de la agencia y deja listo el aviso por WhatsApp. Una versión para el celular lee con IA el teléfono escrito a mano en el paquete.</p>
+          <ul class="chips"><li>AutoHotkey</li><li>JavaScript</li><li>Gemini API</li></ul>
+        </article>
+
+        <article class="trabajo">
+          <img class="captura" src="img/proyectos/traductor-mostrador.webp" alt="Ilustración del traductor: pregunta en portugués, traducción al español y respuesta en voz" width="960" height="600" loading="lazy">
+          <p class="etiqueta tipo">Herramienta interna · Frontera</p>
+          <h3>Traductor de mostrador</h3>
+          <p>Panel para un solo operador que escucha al pasajero, muestra la traducción al español y responde en voz en su idioma, resaltando horarios y precios.</p>
+          <ul class="chips"><li>JavaScript</li><li>Reconocimiento de voz</li><li>Texto a voz</li></ul>
+        </article>
+
+        <article class="trabajo">
+          <img class="captura" src="img/proyectos/sistema-pos.webp" alt="Pantalla principal del sistema de ventas" width="960" height="600" loading="lazy">
+          <p class="etiqueta tipo">Privado · Comercio</p>
+          <h3>Sistema de ventas e inventario</h3>
+          <p>Punto de venta local y privado para registrar ventas y controlar el stock desde la PC del comercio.</p>
+          <p class="priv">Sin demo pública: es de uso privado.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos y prácticas -->
+  <section class="bloque" id="proyectos">
+    <div class="wrap">
+      <div class="cabecera">
+        <h2>Proyectos y prácticas</h2>
+        <p>Landings para negocios y ejercicios de formación. Cada uno tiene el sitio publicado y, cuando corresponde, su código en GitHub.</p>
+      </div>
+
+      <div class="grilla">
+        <article class="proyecto">
+          <img class="captura" src="img/proyectos/tamis.webp" alt="Sitio de Tami's en un celular" width="960" height="600" loading="lazy">
+          <p class="etiqueta">Landing · Gastronomía</p>
+          <h3>Tami's</h3>
+          <p>Hamburguesería de Salinas: menú en PDF, especialidades con precio, zonas de delivery y pedidos por WhatsApp.</p>
+          <div class="links"><a href="https://tamis.vercel.app" target="_blank" rel="noopener">Ver sitio</a></div>
+        </article>
+
+        <article class="proyecto">
+          <img class="captura" src="img/proyectos/dulces-sol.webp" alt="Catálogo de Dulces Sol" width="960" height="600" loading="lazy">
+          <p class="etiqueta">Sitio · Panadería</p>
+          <h3>Dulces Sol</h3>
+          <p>Panadería artesanal con catálogo de productos y pedidos por WhatsApp e Instagram.</p>
+          <div class="links"><a href="https://dulcesolcito.vercel.app" target="_blank" rel="noopener">Ver sitio</a><a href="https://github.com/perazzajose/bakerysol" target="_blank" rel="noopener">Código</a></div>
+        </article>
+
+        <article class="proyecto">
+          <img class="captura" src="img/proyectos/archicad.webp" alt="Portada de ArchiCAD Studio" width="960" height="600" loading="lazy">
+          <p class="etiqueta">Sitio · Servicios</p>
+          <h3>ArchiCAD Studio</h3>
+          <p>Estudio que vende recursos CAD a arquitectos: bloques, plantillas y servicios como pasar planos de PDF a DWG.</p>
+          <div class="links"><a href="https://archicadstudio.vercel.app" target="_blank" rel="noopener">Ver sitio</a><a href="https://github.com/perazzajose/archicad" target="_blank" rel="noopener">Código</a></div>
+        </article>
+
+        <article class="proyecto">
+          <img class="captura" src="img/proyectos/printtech.webp" alt="Landing de PrintTech" width="960" height="600" loading="lazy">
+          <p class="etiqueta">Landing · Hecha con v0</p>
+          <h3>PrintTech</h3>
+          <p>Venta de impresoras para empresas y hogares, con catálogo destacado y contacto por WhatsApp.</p>
+          <div class="links"><a href="https://v0-printer-landing-page-theta.vercel.app/" target="_blank" rel="noopener">Ver sitio</a><a href="https://github.com/perazzajose/v0-printer-landing-page" target="_blank" rel="noopener">Código</a></div>
+        </article>
+
+        <article class="proyecto">
+          <img class="captura" src="img/proyectos/relajate.webp" alt="Pantalla de Relájate con una cascada de fondo" width="960" height="600" loading="lazy">
+          <p class="etiqueta">App web</p>
+          <h3>Relájate</h3>
+          <p>Ejercicio de respiración guiada con video de fondo y música opcional.</p>
+          <div class="links"><a href="https://relax0.vercel.app" target="_blank" rel="noopener">Ver sitio</a><a href="https://github.com/perazzajose/relaxing" target="_blank" rel="noopener">Código</a></div>
+        </article>
+
+        <article class="proyecto">
+          <img class="captura" src="img/proyectos/cocteles.webp" alt="Catálogo de cócteles" width="960" height="600" loading="lazy">
+          <p class="etiqueta">Práctica · Catálogo</p>
+          <h3>Catálogo de cócteles</h3>
+          <p>Clásicos, tragos y cervezas, con recetas basadas en la Asociación Internacional de Bartenders.</p>
+          <div class="links"><a href="https://perazzajose.github.io/webforcocktails/" target="_blank" rel="noopener">Ver sitio</a><a href="https://github.com/perazzajose/webforcocktails" target="_blank" rel="noopener">Código</a></div>
+        </article>
+
+        <article class="proyecto">
+          <img class="captura" src="img/proyectos/recetas-iba.webp" alt="Grilla de recetas de cócteles" width="960" height="600" loading="lazy">
+          <p class="etiqueta">Práctica · Datos externos</p>
+          <h3>Recetas IBA</h3>
+          <p>Recetario armado a partir de los datos de iba-world.com.</p>
+          <div class="links"><a href="https://perazzajose.github.io/iba-api/" target="_blank" rel="noopener">Ver sitio</a><a href="https://github.com/perazzajose/iba-api/" target="_blank" rel="noopener">Código</a></div>
+        </article>
+
+        <article class="proyecto">
+          <img class="captura" src="img/proyectos/sombreros-de-paja.webp" alt="Sitio Sombreros de paja" width="960" height="600" loading="lazy">
+          <p class="etiqueta">Práctica · API propia</p>
+          <h3>Sombreros de paja</h3>
+          <p>Sitio sobre One Piece que consume una API armada por mí.</p>
+          <div class="links"><a href="https://perazzajose.github.io/OP-api/" target="_blank" rel="noopener">Ver sitio</a><a href="https://github.com/perazzajose/OP-api" target="_blank" rel="noopener">Código</a></div>
+        </article>
+
+        <article class="proyecto">
+          <img class="captura" src="img/proyectos/blog.webp" alt="Portada del blog" width="960" height="600" loading="lazy">
+          <p class="etiqueta">Práctica · Blog</p>
+          <h3>Blog de filosofía</h3>
+          <p>Blog personal con ensayos cortos sobre preguntas como el sentido de la vida o la identidad.</p>
+          <div class="links"><a href="https://perazzajose.github.io/blog-practica/" target="_blank" rel="noopener">Ver sitio</a><a href="https://github.com/perazzajose/blog-practica" target="_blank" rel="noopener">Código</a></div>
+        </article>
+
+        <article class="proyecto">
+          <img class="captura" src="img/proyectos/agenda.webp" alt="Agenda de contactos en tablets" width="960" height="600" loading="lazy">
+          <p class="etiqueta">Práctica · JavaScript</p>
+          <h3>Agenda de contactos</h3>
+          <p>Agenda web para agregar y organizar contactos.</p>
+          <div class="links"><a href="https://perazzajose.github.io/Agenda/" target="_blank" rel="noopener">Ver sitio</a><a href="https://github.com/perazzajose/Agenda" target="_blank" rel="noopener">Código</a></div>
+        </article>
+
+        <article class="proyecto">
+          <img class="captura" src="img/proyectos/emercado.webp" alt="Categorías de eMercado" width="960" height="600" loading="lazy">
+          <p class="etiqueta">Curso · Jóvenes a Programar</p>
+          <h3>eMercado</h3>
+          <p>Front de una tienda online por categorías, hecho en el curso de Jóvenes a Programar.</p>
+          <div class="links"><a href="https://perazzajose.github.io/ecommerce-front/" target="_blank" rel="noopener">Ver sitio</a><a href="https://github.com/perazzajose/ecommerce-front" target="_blank" rel="noopener">Código</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section class="bloque" id="sobre-mi">
+    <div class="wrap">
+      <div class="cabecera">
+        <h2>Sobre mí</h2>
+        <p>Desarrollo web, automatización e inteligencia artificial, con algo de humor.</p>
+      </div>
+
+      <div class="sobre">
+        <div class="bio">
+          <figure class="avatar">
+            <img src="img/avatar.jpeg" alt="Roger, de American Dad, como foto de perfil" width="400" height="400" loading="lazy">
+            <figcaption>Foto de perfil, versión oficial.</figcaption>
+          </figure>
+          <p>Empecé a programar en Jóvenes a Programar y hoy desarrollo para comercios y emprendimientos chicos, sobre todo en Rocha y Durazno, desde mi proyecto ConectaTuMundo.</p>
+          <p>Me gusta construir herramientas para problemas concretos: avisos automáticos por WhatsApp, un traductor para atender turistas en la frontera o un cartel de salidas y llegadas para una terminal.</p>
+          <p>Uso inteligencia artificial a diario para programar, redactar y automatizar, y reviso cada resultado antes de entregarlo.</p>
+        </div>
+
+        <div class="lista">
+          <h3>Recorrido</h3>
+          <ul>
+            <li><b>ConectaTuMundo</b><span>Fundador y desarrollador</span></li>
+            <li><b>Apoyos</b><span>ANDE e INEFOP, para ConectaTuMundo</span></li>
+          </ul>
+          <h3>Formación</h3>
+          <ul>
+            <li><b>Desarrollador Web Jr</b><span>Jóvenes a Programar, Plan Ceibal</span></li>
+            <li><b>Analista GeneXus</b><span>Jóvenes a Programar</span></li>
+            <li><b>Cursos en Coursera</b><span>Ciberseguridad, gestión de proyectos y habilidades digitales, vía INEFOP</span></li>
+            <li><b>freeCodeCamp</b><span>Responsive Web Design y algoritmos en JavaScript</span></li>
+            <li><b>Bachillerato</b><span>Instituto Elbio Fernández</span></li>
+            <li><b>Inglés B1</b><span>Voxy</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="herramientas">
+        <div>
+          <h3>Desarrollo</h3>
+          <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React + Vite</li><li>Firebase</li><li>Cloudflare Pages</li><li>GitHub Pages</li><li>Shopify Liquid</li><li>GeneXus</li><li>Excel y VBA</li><li>AutoHotkey</li></ul>
+        </div>
+        <div>
+          <h3>Inteligencia artificial</h3>
+          <ul class="chips"><li>Claude</li><li>Claude Code</li><li>ChatGPT</li><li>Codex</li><li>Gemini</li><li>DeepSeek</li></ul>
+        </div>
+        <div>
+          <h3>Contenido</h3>
+          <ul class="chips"><li>Canva</li><li>CapCut</li><li>DaVinci Resolve</li><li>Audacity</li><li>Higgsfield</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="bloque contacto" id="contacto">
+    <div class="wrap">
+      <div class="cabecera">
+        <h2>¿Tenés algo para <em>resolver</em>?</h2>
+        <p>Contame qué necesitás por WhatsApp o por mail. Te respondo con una propuesta y un precio cerrado antes de empezar.</p>
+      </div>
+      <div class="canales">
+        <a class="canal wa" href="https://wa.me/59897154271" target="_blank" rel="noopener"><span class="etiqueta">WhatsApp</span><b>097 154 271</b></a>
+        <a class="canal" href="mailto:joseperazza100@gmail.com"><span class="etiqueta">Email</span><b>joseperazza100@gmail.com</b></a>
+        <a class="canal" href="https://conectatumundo.net" target="_blank" rel="noopener"><span class="etiqueta">Proyecto</span><b>conectatumundo.net</b></a>
+        <a class="canal" href="https://www.linkedin.com/in/jose-perazza/" target="_blank" rel="noopener"><span class="etiqueta">LinkedIn</span><b>jose-perazza</b></a>
+        <a class="canal" href="https://github.com/perazzajose" target="_blank" rel="noopener"><span class="etiqueta">GitHub</span><b>perazzajose</b></a>
+        <a class="canal" href="Jose_Perazza_DesarrolloWeb.pdf.pdf" target="_blank" rel="noopener"><span class="etiqueta">Currículum</span><b>Descargar CV (PDF)</b></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="wrap"><span>© <span id="anio">2026</span> José Perazza</span><span>Chuy, Rocha · Uruguay</span></div>
 </footer>
+
+<script src="js/main.js"></script>
+</body>
 </html>
