@@ -1,33 +1,30 @@
-// Select DOM Items
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.menu');
-const menuNav = document.querySelector('.menu-nav');
-const menuBranding = document.querySelector('.menu-branding');
-const navItems = document.querySelectorAll('.nav-item');
+// Menú en celular
+const boton = document.querySelector('.menu-btn');
+const menu = document.getElementById('menu');
 
-// Set Initial State Of Menu
-let showMenu = false;
+boton.addEventListener('click', () => {
+  const abierto = menu.classList.toggle('abierto');
+  boton.setAttribute('aria-expanded', abierto);
+  boton.textContent = abierto ? 'Cerrar' : 'Menú';
+});
 
-menuBtn.addEventListener('click', toggleMenu);
+menu.addEventListener('click', (e) => {
+  if (e.target.closest('a') && menu.classList.contains('abierto')) boton.click();
+});
 
-function toggleMenu() {
-  if (!showMenu) {
-    menuBtn.classList.add('close');
-    menu.classList.add('show');
-    menuNav.classList.add('show');
-    menuBranding.classList.add('show');
-    navItems.forEach(item => item.classList.add('show'));
+// Marca en el menú la sección que se está viendo
+const enlaces = [...menu.querySelectorAll('a')];
+const secciones = enlaces.map((a) => document.querySelector(a.getAttribute('href'))).filter(Boolean);
 
-    // Set Menu State
-    showMenu = true;
-  } else {
-    menuBtn.classList.remove('close');
-    menu.classList.remove('show');
-    menuNav.classList.remove('show');
-    menuBranding.classList.remove('show');
-    navItems.forEach(item => item.classList.remove('show'));
-
-    // Set Menu State
-    showMenu = false;
-  }
+if ('IntersectionObserver' in window) {
+  const obs = new IntersectionObserver((entradas) => {
+    entradas.forEach((en) => {
+      if (!en.isIntersecting) return;
+      enlaces.forEach((a) => a.setAttribute('aria-current', a.getAttribute('href') === '#' + en.target.id));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  secciones.forEach((s) => obs.observe(s));
 }
+
+// Año del pie
+document.getElementById('anio').textContent = new Date().getFullYear();
